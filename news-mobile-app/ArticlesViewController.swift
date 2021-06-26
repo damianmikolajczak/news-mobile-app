@@ -74,5 +74,11 @@ extension ArticlesViewController: UITableViewDataSource {
 }
 
 extension ArticlesViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urlToArticle = articles[indexPath.row].url
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ArticleInWeb") as! ArticleWebViewController
+        vc.articleURL = urlToArticle
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
 }

@@ -11,11 +11,15 @@ import WebKit
 class ArticleWebViewController: UIViewController, WKUIDelegate {
 
     @IBOutlet weak var webWindow: WKWebView!
-    let articleURL = String()
+    var articleURL = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let articleRequest = URLRequest(url: URL(string: articleURL)!)
         webWindow.load(articleRequest)
+    }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
