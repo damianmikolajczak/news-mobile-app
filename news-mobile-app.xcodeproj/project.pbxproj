@@ -16,6 +16,7 @@
 		2D1685502687799B0016509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D16854E2687799B0016509C /* LaunchScreen.storyboard */; };
 		2D16855B2687799B0016509C /* news_mobile_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16855A2687799B0016509C /* news_mobile_appTests.swift */; };
 		2D1685662687799B0016509C /* news_mobile_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1685652687799B0016509C /* news_mobile_appUITests.swift */; };
+		2D16857426877E090016509C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16857326877E090016509C /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2D1685612687799B0016509C /* news-mobile-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "news-mobile-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1685652687799B0016509C /* news_mobile_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = news_mobile_appUITests.swift; sourceTree = "<group>"; };
 		2D1685672687799B0016509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D16857326877E090016509C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				2D168540268779980016509C /* AppDelegate.swift */,
 				2D168542268779980016509C /* SceneDelegate.swift */,
 				2D168544268779980016509C /* ViewController.swift */,
+				2D16857326877E090016509C /* News.swift */,
 				2D168546268779980016509C /* Main.storyboard */,
 				2D16854C2687799B0016509C /* Assets.xcassets */,
 				2D16854E2687799B0016509C /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				2D16854B268779980016509C /* news_mobile_app.xcdatamodeld in Sources */,
 				2D168545268779980016509C /* ViewController.swift in Sources */,
 				2D168541268779980016509C /* AppDelegate.swift in Sources */,
+				2D16857426877E090016509C /* News.swift in Sources */,
 				2D168543268779980016509C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
