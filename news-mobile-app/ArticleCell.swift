@@ -9,8 +9,8 @@ import UIKit
 
 class ArticleCell: UITableViewCell {
     @IBOutlet weak var source: UILabel!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var title: UITextView!
+    @IBOutlet weak var subtitle: UITextView!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var publishDate: UILabel!
     @IBOutlet weak var articleImage: UIImageView!

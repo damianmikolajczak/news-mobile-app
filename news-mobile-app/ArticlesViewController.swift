@@ -12,13 +12,14 @@ class ArticlesViewController: UIViewController {
     @IBOutlet weak var articlesTable: UITableView!
     let APIURL:String = "https://newsapi.org/v2/"
     
+    
     var articles = Array<News>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         articlesTable.dataSource = self
         articlesTable.delegate = self
-        articlesTable.rowHeight = 422
+        articlesTable.rowHeight = 460
         downloadArticles()
     }
     
@@ -62,7 +63,8 @@ extension ArticlesViewController: UITableViewDataSource {
                 cell.title.text = article.title
                 cell.subtitle.text = article.description
                 cell.author.text = article.author
-                cell.publishDate.text = article.publishedAt
+                let dateString = String(article.publishedAt.prefix(10))
+                cell.publishDate.text = dateString
             }
         }
         task.resume()
