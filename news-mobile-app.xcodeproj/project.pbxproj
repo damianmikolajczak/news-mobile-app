@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D168541268779980016509C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168540268779980016509C /* AppDelegate.swift */; };
 		2D168543268779980016509C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168542268779980016509C /* SceneDelegate.swift */; };
-		2D168545268779980016509C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168544268779980016509C /* ViewController.swift */; };
+		2D168545268779980016509C /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168544268779980016509C /* ArticlesViewController.swift */; };
 		2D168548268779980016509C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D168546268779980016509C /* Main.storyboard */; };
 		2D16854B268779980016509C /* news_mobile_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D168549268779980016509C /* news_mobile_app.xcdatamodeld */; };
 		2D16854D2687799B0016509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D16854C2687799B0016509C /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		2D16855B2687799B0016509C /* news_mobile_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16855A2687799B0016509C /* news_mobile_appTests.swift */; };
 		2D1685662687799B0016509C /* news_mobile_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1685652687799B0016509C /* news_mobile_appUITests.swift */; };
 		2D16857426877E090016509C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16857326877E090016509C /* News.swift */; };
+		2D168576268785840016509C /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168575268785840016509C /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		2D16853D268779980016509C /* news-mobile-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "news-mobile-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D168540268779980016509C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D168542268779980016509C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D168544268779980016509C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D168544268779980016509C /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		2D168547268779980016509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D16854A268779980016509C /* news_mobile_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = news_mobile_app.xcdatamodel; sourceTree = "<group>"; };
 		2D16854C2687799B0016509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		2D1685652687799B0016509C /* news_mobile_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = news_mobile_appUITests.swift; sourceTree = "<group>"; };
 		2D1685672687799B0016509C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D16857326877E090016509C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		2D168575268785840016509C /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 			children = (
 				2D168540268779980016509C /* AppDelegate.swift */,
 				2D168542268779980016509C /* SceneDelegate.swift */,
-				2D168544268779980016509C /* ViewController.swift */,
+				2D168544268779980016509C /* ArticlesViewController.swift */,
+				2D168575268785840016509C /* ArticleCell.swift */,
 				2D16857326877E090016509C /* News.swift */,
 				2D168546268779980016509C /* Main.storyboard */,
 				2D16854C2687799B0016509C /* Assets.xcassets */,
@@ -265,7 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D16854B268779980016509C /* news_mobile_app.xcdatamodeld in Sources */,
-				2D168545268779980016509C /* ViewController.swift in Sources */,
+				2D168545268779980016509C /* ArticlesViewController.swift in Sources */,
+				2D168576268785840016509C /* ArticleCell.swift in Sources */,
 				2D168541268779980016509C /* AppDelegate.swift in Sources */,
 				2D16857426877E090016509C /* News.swift in Sources */,
 				2D168543268779980016509C /* SceneDelegate.swift in Sources */,
