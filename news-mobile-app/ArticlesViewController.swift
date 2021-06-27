@@ -20,6 +20,7 @@ class ArticlesViewController: UIViewController {
         articlesTable.dataSource = self
         articlesTable.delegate = self
         //articlesTable.rowHeight = 460
+        //articlesTable.estimatedRowHeight = 250
         downloadArticles()
     }
     
@@ -86,4 +87,5 @@ extension ArticlesViewController: UITableViewDelegate {
         nc.modalPresentationStyle = .fullScreen
         present(nc, animated: true, completion: nil)
     }
+    
 }
