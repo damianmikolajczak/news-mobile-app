@@ -19,6 +19,7 @@
 		2D16857426877E090016509C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16857326877E090016509C /* News.swift */; };
 		2D168576268785840016509C /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168575268785840016509C /* ArticleCell.swift */; };
 		2D168578268797030016509C /* ArticleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168577268797020016509C /* ArticleWebViewController.swift */; };
+		2D16857A268882180016509C /* ArticleWebNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D168579268882180016509C /* ArticleWebNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2D16857326877E090016509C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		2D168575268785840016509C /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		2D168577268797020016509C /* ArticleWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebViewController.swift; sourceTree = "<group>"; };
+		2D168579268882180016509C /* ArticleWebNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleWebNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				2D168575268785840016509C /* ArticleCell.swift */,
 				2D168577268797020016509C /* ArticleWebViewController.swift */,
 				2D16857326877E090016509C /* News.swift */,
+				2D168579268882180016509C /* ArticleWebNavigationController.swift */,
 				2D168546268779980016509C /* Main.storyboard */,
 				2D16854C2687799B0016509C /* Assets.xcassets */,
 				2D16854E2687799B0016509C /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				2D168576268785840016509C /* ArticleCell.swift in Sources */,
 				2D168541268779980016509C /* AppDelegate.swift in Sources */,
 				2D16857426877E090016509C /* News.swift in Sources */,
+				2D16857A268882180016509C /* ArticleWebNavigationController.swift in Sources */,
 				2D168578268797030016509C /* ArticleWebViewController.swift in Sources */,
 				2D168543268779980016509C /* SceneDelegate.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ class ArticlesViewController: UIViewController {
 
     @IBOutlet weak var articlesTable: UITableView!
     let APIURL:String = "https://newsapi.org/v2/"
-    
+    let token: String = ""
     
     var articles = Array<News>()
     
@@ -19,7 +19,7 @@ class ArticlesViewController: UIViewController {
         super.viewDidLoad()
         articlesTable.dataSource = self
         articlesTable.delegate = self
-        articlesTable.rowHeight = 460
+        //articlesTable.rowHeight = 460
         downloadArticles()
     }
     
@@ -75,10 +75,15 @@ extension ArticlesViewController: UITableViewDataSource {
 
 extension ArticlesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let urlToArticle = articles[indexPath.row].url
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ArticleInWeb") as! ArticleWebViewController
-        vc.articleURL = urlToArticle
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+        let nc = storyboard?.instantiateViewController(withIdentifier: "WebArticleNavigationController") as! ArticleWebNavigationController
+        
+        guard let vc = nc.viewControllers.first as? ArticleWebViewController else {
+            print("Something went wrong")
+            return
+        }
+        vc.articleURL = articles[indexPath.row].url
+        print("So far so good")
+        nc.modalPresentationStyle = .fullScreen
+        present(nc, animated: true, completion: nil)
     }
 }
