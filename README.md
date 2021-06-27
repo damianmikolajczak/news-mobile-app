@@ -13,4 +13,4 @@ published date, domains or even languages - there is also an option to sort the 
 
 ## Screenshots
 
-<img src="news-mobile-app/Images/main.PNG" width="300"> <img src="news-mobile-app/Images/searchREsult.PNG" width="300"> <img src="news-mobile-app/Images/webView.PNG" width="300">
+<img src="news-mobile-app/Images/main.PNG" width="250"> <img src="news-mobile-app/Images/searchREsult.PNG" width="250"> <img src="news-mobile-app/Images/webView.PNG" width="250">
