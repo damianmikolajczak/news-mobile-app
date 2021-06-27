@@ -10,22 +10,28 @@ import UIKit
 class ArticlesViewController: UIViewController {
 
     @IBOutlet weak var articlesTable: UITableView!
+    @IBOutlet weak var searchBar: UITextField!
+    
+    @IBAction func searchForArticles() {
+        guard let querry = searchBar.text else { return }
+        downloadArticles(with: querry)
+        view.endEditing(true)
+    }
+    
     let APIURL:String = "https://newsapi.org/v2/"
     let token: String = ""
-    
     var articles = Array<News>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         articlesTable.dataSource = self
         articlesTable.delegate = self
-        //articlesTable.rowHeight = 460
-        //articlesTable.estimatedRowHeight = 250
-        downloadArticles()
+        downloadArticles(with: "New")
+        dismissKeyboard()
     }
     
-    func downloadArticles() {
-        let url = URL(string: "\(APIURL)everything?q=Apple")
+    func downloadArticles(with querry: String) {
+        let url = URL(string: "\(APIURL)everything?q=\(querry)&excludeDomains=engadget.com")
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         request.addValue("\(token)", forHTTPHeaderField: "Authorization")
@@ -88,4 +94,17 @@ extension ArticlesViewController: UITableViewDelegate {
         present(nc, animated: true, completion: nil)
     }
     
+}
+
+extension ArticlesViewController {
+    func dismissKeyboard() {
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboad))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func hideKeyboad() {
+        view.endEditing(true)
+    }
 }
