@@ -17,7 +17,7 @@ On the main screen the user can see the newest articles - downloaded using the A
 <img src="news-mobile-app/Images/main.PNG" width="250"> <img src="news-mobile-app/Images/searchREsult.PNG" width="250"> <img src="news-mobile-app/Images/webView.PNG" width="250">
 
 ## Passing the URL to the WebView
-The stroy board is very simple and has only three views, where one of them is a navigation controller. Because of that we cant simply instatiate the view with the web view - the navigation bar would be missing.
+The stroyboard is very simple and has only three views, where one of them is a navigation controller. Because of that we cant simply instatiate the view with the web view - the navigation bar would be missing.
 
 <img src="news-mobile-app/Images/storyboard.png" width="500">
 
